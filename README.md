@@ -1,2 +1,2 @@
 # mail-script
-Automated your mails with Python
+Automate your mails with Python
