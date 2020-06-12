@@ -13,4 +13,4 @@ Automate your mails with Python
 - pandas
 
 
-Note: Turn off "Less secure app access" [https://support.google.com/accounts/answer/6010255?hl=en](Click here)
+Note: Turn off "Less secure app access" [Click here](https://support.google.com/accounts/answer/6010255?hl=en)
