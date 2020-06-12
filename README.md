@@ -19,4 +19,4 @@ Note: Turn off "Less secure app access" [Click here](https://support.google.com/
 We had organized Webinar Series and received more than 500 registrations. Now the challenge was to send certificate to them. 
 To tackle this problem, I wrote this small python script in Python. Script takes input as a [CSV](/list.csv) and send mail to participants with individual certificate in PDF. 
 
-I have also mentioned rename_pdf function in the script, it changes the certificate name to <username>_<int> to make each and every file unique. So It will be easy to send mail with the attachment.
+I have also mentioned rename_pdf function in the script, it changes the certificate name to 'username_int' to make each and every file unique. So It will be easy to send mail with the attachment.
