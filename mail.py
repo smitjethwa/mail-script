@@ -4,6 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase 
 from email import encoders 
 import pandas as pd
+
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
@@ -11,14 +12,12 @@ from dotenv import load_dotenv
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-
+# Environment Variables
 SMTP_URL = os.environ.get("SMTP_URL")
 PORT = os.environ.get("PORT")
 SENDER_NAME = os.environ.get("SENDER_NAME")
 SENDER = os.environ.get("SENDER")
 PASSWORD = os.environ.get("PASSWORD")
-
-
 
 df = pd.read_csv('list.csv')   # Read CSV file
 products_list = df.values.tolist()
@@ -28,7 +27,7 @@ for i in products_list:
     receiver_list.append(i[1])
     name_list.append(i[0])
 
-
+#to send emails
 def send_mail(i):    
     msg = MIMEMultipart()       # instance of MIMEMultipart   
     msg['From'] = f"{SENDER_NAME}  {SENDER}"        # storing the senders email address   
